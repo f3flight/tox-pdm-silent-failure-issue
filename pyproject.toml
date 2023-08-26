@@ -1,0 +1,21 @@
+[project]
+name = "helloworld"
+version = "0.0.0"
+description = "nothing interesting here"
+authors = [
+    {name = "Me", email = "test@test.com"},
+]
+dependencies = [
+    "pyyaml>=6.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
